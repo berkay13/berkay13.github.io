@@ -1,20 +1,7 @@
 body {
-	--sz: 10px;
-	--c1: #ffffff;
-	--c2: #ffffff;
-	--c3: #007BFF;
-	--c4: #394263;
-	--ts: 50%/ calc(var(--sz) * 10.5) calc(var(--sz) * 12.2);
-	margin: 0;
-	padding: 0;
-	height: 100vh;
-	overflow: hidden;
-	background: 
-		conic-gradient(from 180deg at 100% 83.335%, var(--c3) 0 60deg, #fff0 0 360deg) var(--ts),
-		conic-gradient(from 120deg at 66.66% 66.66%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
-		conic-gradient(from 60deg at 66.66% 33.33%, var(--c2) 0 60deg, var(--c4) 0 120deg, #fff0 0 360deg) var(--ts),
-		conic-gradient(from -60deg at 33% 16.665%, var(--c1) 0 120deg, var(--c3) 0 240deg, var(--c4) 0 360deg) var(--ts),
-		var(--c2);
+	font-family: Arial, sans-serif;
+	margin: 20px;
+	background-color: #f8f9fa;
 }
 h1 {
 	color: #333;
