@@ -1,8 +1,19 @@
 body {
-	font-family: Arial, sans-serif;
-	margin: 20px;
-	background-color: #394263;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #394263; 
+    background-image:
+        linear-gradient(30deg, #2f3656 12%, transparent 12.5%, transparent 87%, #2f3656 87.5%, #2f3656),
+        linear-gradient(90deg, #2f3656 12%, transparent 12.5%, transparent 87%, #2f3656 87.5%, #2f3656),
+        linear-gradient(30deg, #4a5572 12%, transparent 12.5%, transparent 87%, #4a5572 87.5%, #4a5572),
+        linear-gradient(90deg, #4a5572 12%, transparent 12.5%, transparent 87%, #4a5572 87.5%, #4a5572),
+        linear-gradient(-30deg, rgba(255, 255, 255, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
+        linear-gradient(-30deg, rgba(255, 255, 255, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05));
+    background-size: 100px 58px;
+    background-position: 0 0, 0 0, 50px 29px, 50px 29px, 0 0, 50px 29px;
+    color: white; 
 }
+
 h1 {
 	color: #333;
 }
