@@ -1,31 +1,51 @@
+:root {
+  --size: 20px;
+}
+
 body {
-	height: 100vh;
-	--sz: 10px; /*** size ***/
-	--c0: #394263;
-	--c1: #007BFF;
-  --c2: #2034b3;
-  --c3: #082570;
-  --ts: 50%/ calc(var(--sz) * 12.8) calc(var(--sz) * 22);
-  background:
-		/*bottom*/
-    conic-gradient(from 120deg at 50% 86.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
-    conic-gradient(from 120deg at 50% 86.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
-		/*bottom dark*/
-		conic-gradient(from 120deg at 50% 74%, var(--c0) 0 120deg, #fff0 0 360deg) var(--ts),
-		/*right*/
-		conic-gradient(from 60deg at 60% 50%, var(--c1) 0 60deg, var(--c2) 0 120deg, #fff0 0 360deg) var(--ts),
-		/*left*/
-		conic-gradient(from 180deg at 40% 50%, var(--c3) 0 60deg, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
-		/*top dark*/
-    conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
-    conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
-    conic-gradient(from 0deg at 90% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
-    conic-gradient(from -90deg at 10% 35%, var(--c0) 0 90deg, #fff0 0 360deg) var(--ts),
-		/*top*/
-    conic-gradient(from -60deg at 50% 13.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
-    conic-gradient(from -60deg at 50% 13.5%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
-		conic-gradient(from -60deg at 50% 41%, var(--c2) 0 60deg, var(--c3) 0 120deg, #fff0 0 360deg) var(--ts),
-		var(--c0) ;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background: #082570;
+  position: relative; /* Allow overlay of animated background */
+}
+
+/* Animated Background */
+.el {
+  background: conic-gradient(from 180deg at 50% 70%, hsla(0,0%,98%,1) 0deg, #eec32d 72.0000010728836deg, #ec4b4b 144.0000021457672deg, #709ab9 216.00000858306885deg, #4dffbf 288.0000042915344deg, hsla(0,0%,98%,1) 1turn);
+  width: 100%;
+  height: 100%;
+  mask: radial-gradient(circle at 50% 50%, white 2px, transparent 2.5px) 50% 50% / var(--size) var(--size), url("https://assets.codepen.io/605876/noise-mask.png") 256px 50% / 256px 256px;
+  mask-composite: intersect;
+  animation: flicker 20s infinite linear;
+  position: absolute; /* Ensure it sits under the content */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send the background behind the content */
+}
+
+/* Large Text Styling - Updated to use .animated-title class */
+.animated-title {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  margin: 0;
+  font-size: clamp(6rem, 8vw + 1rem, 14rem);
+  font-family: "Geist", sans-serif;
+  font-weight: 140;
+  color: #ffffff;
+  mix-blend-mode: soft-light;
+  filter: drop-shadow(0 0 2px white);
+  text-shadow: 2px 2px white;
+  z-index: 10; /* Ensure the text stays above the background */
+}
+
+/* Flicker Animation */
+@keyframes flicker {
+  to {
+    mask-position: 50% 50%, 0 50%;
+  }
 }
 h1 {
 	color: #333;
