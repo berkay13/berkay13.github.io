@@ -250,7 +250,6 @@ function renderSeminarSection($header, $seminars, $isAdmin = false) {
             popup.classList.toggle("show");
         }
     </script>
-<div class="background-shape"></div>
 
 	
 </body>
