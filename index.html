@@ -13,7 +13,31 @@
 	
 	        <a href="login.php" class="login-button">Log In</a>
     	
-	
+<div class="info-container">
+        <span class="info-link" onclick="togglePopup()">Information for graduate students who registered for the graduate seminar course</span>
+        <div id="popup" class="popup-window">
+            <div class="popup-content">
+                <span class="close-btn" onclick="togglePopup()">×</span>
+                <h3>Information for graduate students who registered for the graduate seminar course:</h3>
+                <ul>
+                    <li>You can attend <b>one</b> of the seminars each week to fulfill your graduate seminar requirements.</li>
+                    <li>For the entire semester, <b>you are required to attend at least 8 seminars.</b></li>
+                    <li>Maximum two <b>asynchronous</b> seminar attendances will be counted for each week.</li>
+                    <li>Seminars will be on Zoom, hybrid, or physical only. Attendance will be monitored through Zoom reports and/or in person.</li>
+                    <li>It is a great opportunity for you to meet renowned scientists and explore new topics. Therefore, we expect your active participation and encourage you to ask questions.</li>
+                    <li>For the seminars on Zoom, you must enter using your Sabanci University account, otherwise we won’t be able to count it for attendance.</li>
+                    <li>You can ask your questions to our TA Mervenaz Şahin via <a href="mailto:mervenaz.sahin@sabanciniv.edu">mervenaz.sahin@sabanciniv.edu</a>.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function togglePopup() {
+            const popup = document.getElementById("popup");
+            popup.classList.toggle("show");
+        }
+    </script>	
     <h2>This Week</h2><div class="seminars-container">        <div class="seminar-card">
                             <a href="viewdetails.php?id=64">
                     <img src="uploads/SUseminar.jpg" alt="Seminar Image" class="seminar-image">
@@ -167,31 +191,7 @@ This event is run by the SUCool Ambassador Student Team.</div>
                             </div>
         </div>
         </div>	
-	<div class="info-container">
-        <span class="info-link" onclick="togglePopup()">Information for graduate students who registered for the graduate seminar course</span>
-        <div id="popup" class="popup-window">
-            <div class="popup-content">
-                <span class="close-btn" onclick="togglePopup()">×</span>
-                <h3>Information for graduate students who registered for the graduate seminar course:</h3>
-                <ul>
-                    <li>You can attend <b>one</b> of the seminars each week to fulfill your graduate seminar requirements.</li>
-                    <li>For the entire semester, <b>you are required to attend at least 8 seminars.</b></li>
-                    <li>Maximum two <b>asynchronous</b> seminar attendances will be counted for each week.</li>
-                    <li>Seminars will be on Zoom, hybrid, or physical only. Attendance will be monitored through Zoom reports and/or in person.</li>
-                    <li>It is a great opportunity for you to meet renowned scientists and explore new topics. Therefore, we expect your active participation and encourage you to ask questions.</li>
-                    <li>For the seminars on Zoom, you must enter using your Sabanci University account, otherwise we won’t be able to count it for attendance.</li>
-                    <li>You can ask your questions to our TA Mervenaz Şahin via <a href="mailto:mervenaz.sahin@sabanciniv.edu">mervenaz.sahin@sabanciniv.edu</a>.</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        function togglePopup() {
-            const popup = document.getElementById("popup");
-            popup.classList.toggle("show");
-        }
-    </script>
+	
 	
 	
 
