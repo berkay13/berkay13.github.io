@@ -314,3 +314,18 @@ a:hover {
 .close-btn:hover {
     color: #000;
 }
+
+.background-shape {
+    position: absolute;
+    top: 100px;  /* Adjust position as needed */
+    right: 50px;  /* Adjust position */
+    width: 300px;  /* Adjust size */
+    height: 300px;  /* Adjust size */
+    background-image: url('https://fens.sabanciuniv.edu/sites/fens.sabanciuniv.edu/files/inline-images/footer2-1.png');
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    z-index: -1;  /* Send it behind other content */
+    opacity: 0.8;  /* Optional: Adjust transparency */
+}
+
