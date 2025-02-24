@@ -1,31 +1,7 @@
 body {
 	font-family: Arial, sans-serif;
 	margin: 20px;
-	background: #082570;
-  	position: relative; /* Allow overlay of animated background */
-}
-/* Large Text Styling - Updated to use .animated-title class */
-.animated-title {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  margin: 0;
-  font-size: clamp(6rem, 8vw + 1rem, 14rem);
-  font-family: "Geist", sans-serif;
-  font-weight: 140;
-  color: #ffffff;
-  mix-blend-mode: soft-light;
-  filter: drop-shadow(0 0 2px white);
-  text-shadow: 2px 2px white;
-  z-index: 10; /* Ensure the text stays above the background */
-}
-
-/* Flicker Animation */
-@keyframes flicker {
-  to {
-    mask-position: 50% 50%, 0 50%;
-  }
+	background-color: #394263;
 }
 h1 {
 	color: #333;
