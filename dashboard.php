@@ -194,8 +194,7 @@ function renderSeminarSection($header, $seminars, $isAdmin = false) {
     <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
-    <div class="el"></div>
-    <h1 class="animated-title">Sabanci University</h1>
+	
 	<a href="dashboard.php"><img src="SUlogo.png" alt="SU Logo" class="logo"></a>
 
     <h1 class="welcome-text"><?php if (isset($_SESSION['user'])) echo "Welcome, " . htmlspecialchars($_SESSION['user']) . "!"; ?></h1>
@@ -251,7 +250,7 @@ function renderSeminarSection($header, $seminars, $isAdmin = false) {
             popup.classList.toggle("show");
         }
     </script>
-
+	
 	
 </body>
 </html>
