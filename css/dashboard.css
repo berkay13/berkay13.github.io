@@ -1,12 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #082570;
-    background-image: url('background.jpeg'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+    background-image: url('path/to/your/image.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    color: white; 
 }
+
 h1 {
 	color: #333;
 }
