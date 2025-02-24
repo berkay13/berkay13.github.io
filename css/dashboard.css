@@ -1,19 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-color: #394263; 
-    background-image:
-        linear-gradient(30deg, #2f3656 12%, transparent 12.5%, transparent 87%, #2f3656 87.5%, #2f3656),
-        linear-gradient(90deg, #2f3656 12%, transparent 12.5%, transparent 87%, #2f3656 87.5%, #2f3656),
-        linear-gradient(30deg, #4a5572 12%, transparent 12.5%, transparent 87%, #4a5572 87.5%, #4a5572),
-        linear-gradient(90deg, #4a5572 12%, transparent 12.5%, transparent 87%, #4a5572 87.5%, #4a5572),
-        linear-gradient(-30deg, rgba(255, 255, 255, 0.1) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.1) 75%, rgba(255, 255, 255, 0.1)),
-        linear-gradient(-30deg, rgba(255, 255, 255, 0.05) 25%, transparent 25.5%, transparent 75%, rgba(255, 255, 255, 0.05) 75%, rgba(255, 255, 255, 0.05));
-    background-size: 100px 58px;
-    background-position: 0 0, 0 0, 50px 29px, 50px 29px, 0 0, 50px 29px;
-    color: white; 
+	--sz: 10px;
+	--c1: #ffffff;
+	--c2: #ffffff;
+	--c3: #007BFF;
+	--c4: #394263;
+	--ts: 50%/ calc(var(--sz) * 10.5) calc(var(--sz) * 12.2);
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	overflow: hidden;
+	background: 
+		conic-gradient(from 180deg at 100% 83.335%, var(--c3) 0 60deg, #fff0 0 360deg) var(--ts),
+		conic-gradient(from 120deg at 66.66% 66.66%, var(--c1) 0 120deg, #fff0 0 360deg) var(--ts),
+		conic-gradient(from 60deg at 66.66% 33.33%, var(--c2) 0 60deg, var(--c4) 0 120deg, #fff0 0 360deg) var(--ts),
+		conic-gradient(from -60deg at 33% 16.665%, var(--c1) 0 120deg, var(--c3) 0 240deg, var(--c4) 0 360deg) var(--ts),
+		var(--c2);
 }
-
 h1 {
 	color: #333;
 }
