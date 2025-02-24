@@ -195,6 +195,7 @@ function renderSeminarSection($header, $seminars, $isAdmin = false) {
 </head>
 <body>
 	<a href="dashboard.php"><img src="SUlogo.png" alt="SU Logo" class="logo"></a>
+	<a href="dashboard.php"><img src="background.jpeg" alt="background" class="background"></a>
 
     <h1 class="welcome-text"><?php if (isset($_SESSION['user'])) echo "Welcome, " . htmlspecialchars($_SESSION['user']) . "!"; ?></h1>
 	
