@@ -314,3 +314,52 @@ a:hover {
 .close-btn:hover {
     color: #000;
 }
+
+/* Add hexagon shapes on left and right sides */
+.hexagon-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999; /* Ensure it's behind content but above the background */
+    pointer-events: none; /* Allow interaction with elements below */
+}
+
+.hexagon {
+    position: absolute;
+    width: 60px; /* Size of the hexagon */
+    height: 60px;
+    background-color: #fff; /* Color of the hexagon */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Shape of a hexagon */
+    border: 2px solid #ccc; /* Border of the hexagon */
+}
+
+.hexagon-left {
+    left: -30px; /* Position it on the left side */
+    top: 10px;
+    transform: rotate(90deg); /* Rotate the hexagon to align with the edge */
+}
+
+.hexagon-right {
+    right: -30px; /* Position it on the right side */
+    top: 10px;
+    transform: rotate(90deg); /* Rotate the hexagon to align with the edge */
+}
+
+.hexagon-left, .hexagon-right {
+    animation: hexagon-animation 2s infinite linear;
+}
+
+@keyframes hexagon-animation {
+    0% {
+        top: 10px;
+    }
+    50% {
+        top: 50%;
+    }
+    100% {
+        top: 90%;
+    }
+}
+
