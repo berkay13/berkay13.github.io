@@ -1,0 +1,225 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Search Form */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="datetime-local"],
+form button {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Input Fields */
+form input[type="text"],
+form input[type="datetime-local"] {
+    flex: 1;
+    min-width: 150px;
+}
+
+form input[type="text"]:focus,
+form input[type="datetime-local"]:focus {
+    outline: none;
+    border-color: #007acc;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.3);
+}
+
+/* Buttons */
+form button {
+    background-color: #007acc;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    flex: 0 0 auto;
+    min-width: 100px;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+form button[type="button"] {
+    background-color: #f44336;
+}
+
+form button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    max-width: 1000px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #007acc;
+    color: #ffffff;
+}
+
+thead th {
+    padding: 12px;
+    font-size: 1rem;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody td {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Image Styling */
+td img {
+    width: 50px;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        flex-direction: column;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    th::before, td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+    }
+
+    tbody tr {
+        border-bottom: 2px solid #ddd;
+        margin-bottom: 10px;
+    }
+}
+
+/* Action Buttons Base Style */
+.action-button {
+    display: inline-block;
+    width: 120px;
+    text-align: center; /* Center-align text */
+    padding: 8px 12px; /* Uniform padding for all buttons */
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Edit Button Style */
+.edit-button {
+    background-color: #28a745; /* Green */
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+/* Delete Button Style */
+.delete-button {
+    background-color: #dc3545; /* Red */
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+/* Set Attendance Button Style */
+.attendance-button {
+    background-color: #007bff; /* Blue */
+}
+
+.attendance-button:hover {
+    background-color: #0069d9;
+}
+
+/* Optional: Adjust Image Alignment in Table */
+table img {
+    display: block;
+    margin: 0 auto;
+}
+
+th:nth-child(3), td:nth-child(3) {
+    min-width: 300px; /* Set a minimum width for the column */
+    max-width: 600px; /* Prevent the column from expanding too much */
+    word-wrap: break-word; /* Ensure text wraps within the column */
+    white-space: normal; /* Allow text wrapping */
+}
+
+/* Back to Dashboard Link */
+#back-to-dashboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+

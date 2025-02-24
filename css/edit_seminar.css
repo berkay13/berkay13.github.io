@@ -1,0 +1,372 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label and Input Field Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit Button Style */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* File Input Padding */
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Back to Dashboard Link */
+#back-to-dashboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+#back-to-dashboard:hover {
+    background-color: #e0e0e0;
+}
+
+/* Checkbox Container Style */
+.checkbox-container * {
+    padding: 0;
+    margin: 5px;
+}
+
+.checkbox-container #is_visible {
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.checkbox-container #visible_label {
+    float: left;
+    padding-left: 3px;
+}
+
+/* Seminar Types Container Style */
+.seminar-types-container {
+    padding: 10px 0;
+    margin-bottom: 16px;
+}
+
+.seminar-types-container label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between checkbox and label text */
+    margin-bottom: 8px; /* Space between each option */
+    color: #333;
+}
+
+.seminar-types-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Responsive Form Adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.delete-button:hover {
+    color: darkred;
+}
+
+/* Container for the checkbox and input field */
+.seminar-type-field {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between checkbox and input */
+    font-size: 12px; /* Base font size for the field */
+}
+
+/* Style for the input field */
+.ghost-type {
+    width: 150px;
+    font-size: 12px;
+    padding: 4px;
+}
+
+/* Style for the checkbox */
+.seminar-type-field input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Target the online_url_field by its ID and add top padding */
+#online_url_field {
+    padding-top: 0px;
+	padding-bottom: 30px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #333;
+}
+
+/* Heading Styles */
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Label and Input Field Styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+input[type="datetime-local"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    color: #333;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Submit Button Style */
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* File Input Padding */
+input[type="file"] {
+    padding: 5px;
+}
+
+/* Back to Dashboard Link */
+#back-to-dashboard {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+#back-to-dashboard:hover {
+    background-color: #e0e0e0;
+}
+
+/* Checkbox Container Style */
+.checkbox-container * {
+    padding: 0;
+    margin: 5px;
+}
+
+.checkbox-container #is_visible {
+    width: 15px;
+    height: 15px;
+    float: left;
+}
+
+.checkbox-container #visible_label {
+    float: left;
+    padding-left: 3px;
+}
+
+/* Seminar Types Container Style */
+.seminar-types-container {
+    padding: 10px 0;
+    margin-bottom: 16px;
+}
+
+.seminar-types-container label {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between checkbox and label text */
+    margin-bottom: 8px; /* Space between each option */
+    color: #333;
+}
+
+.seminar-types-container input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+/* Responsive Form Adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.delete-button:hover {
+    color: darkred;
+}
+
+/* Container for the checkbox and input field */
+.seminar-type-field {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between checkbox and input */
+    font-size: 12px; /* Base font size for the field */
+}
+
+/* Style for the input field */
+.ghost-type {
+    width: 150px;
+    font-size: 12px;
+    padding: 4px;
+}
+
+/* Style for the checkbox */
+.seminar-type-field input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Target the online_url_field by its ID and add top padding */
+#online_url_field {
+    padding-top: 0px;
+	padding-bottom: 30px;
+}
+
+/* Target the label for Attendance Weight and reduce its bottom margin */
+label[for="attendance_weight"] {
+    margin-bottom: -15px; /* Adjust this value as needed */
+}
+
+/* Target the Attendance Weight input and reduce its top margin */
+input#attendance_weight {
+    margin-top: 10px; /* Adjust this value as needed */
+	margin-bottom: 15px;
+}

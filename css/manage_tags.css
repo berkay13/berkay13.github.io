@@ -1,0 +1,102 @@
+/* manage_tags.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f8f9fa;
+    cursor: pointer; /* Indicates sortable columns */
+}
+
+input[type="checkbox"] {
+    margin: 0;
+}
+
+/* Back to Dashboard Link */
+#back-to-dashboard {
+    position: absolute;
+    top: 10px; /* Distance from the top of the page */
+    left: 10px; /* Distance from the left of the page */
+    font-size: 1rem; /* Adjust font size if needed */
+    text-decoration: none;
+    color: #000; /* Adjust color */
+    padding: 5px 10px; /* Optional padding for better appearance */
+    background-color: #f0f0f0; /* Optional background */
+    border-radius: 4px; /* Optional rounded corners */
+}
+
+#back-to-dashboard:hover {
+    background-color: #e0e0e0; /* Optional hover effect */
+}
+
+/* Forms */
+form {
+    margin-bottom: 10px;
+}
+
+.add-form {
+    margin-top: 15px;
+}
+
+
+input, button {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+/* Buttons */
+button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Table Rows */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
+    #back-to-dashboard {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+}
