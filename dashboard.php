@@ -242,10 +242,7 @@ function renderSeminarSection($header, $seminars, $isAdmin = false) {
             </div>
         </div>
     </div>
-<div class="hexagon-container">
-    <div class="hexagon hexagon-left"></div>
-    <div class="hexagon hexagon-right"></div>
-</div>
+
     <script>
         function togglePopup() {
             const popup = document.getElementById("popup");
